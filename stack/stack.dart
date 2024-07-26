@@ -1,7 +1,7 @@
 class Stack<E> {
   Stack() : _storage = <E>[];
 
-  Stack.of(Iterable<E> elements) : _storage = List<E>.of(elements);
+  // Stack.of(Iterable<E> elements) : _storage = List<E>.of(elements);
 
   final List<E> _storage;
 

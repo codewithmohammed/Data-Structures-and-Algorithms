@@ -36,7 +36,6 @@ extension DepthFirstSearch<E> on Graph<E> {
       }
       stack.pop();
     }
-
     return visited;
   }
 }

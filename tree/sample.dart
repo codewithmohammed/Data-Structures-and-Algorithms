@@ -4,10 +4,10 @@ void main() {
   treeImplementation();
   print('Depth First Search');
   depthFirstTraversal();
-    print('Breadtg First Search');
+  print('Breadtg First Search');
 
   levelOrderTraversal();
-    print('Searching for element');
+  print('Searching for element');
 
   search();
 }
@@ -33,6 +33,7 @@ TreeNode<String> makeBeverageTree() {
   final coffee = TreeNode('coffee');
   final chocolate = TreeNode('cocoa');
   final blackTea = TreeNode('black');
+  ;
   final greenTea = TreeNode('green');
   final chaiTea = TreeNode('chai');
   final soda = TreeNode('soda');

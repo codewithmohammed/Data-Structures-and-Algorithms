@@ -21,6 +21,7 @@ int partition(List<int> array, low, high) {
   }
   int pivot = array[high];
   int i = low - 1;
+  print(i);
   for (int j = low; j < high; j++) {
     if (array[j] < pivot) {
       i++;

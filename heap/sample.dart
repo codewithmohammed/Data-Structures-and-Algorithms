@@ -3,11 +3,11 @@
 import 'heap.dart';
 
 void main() {
-  // inserting();
-  // removingRoot();
-  // removingArbitraryNode();
-  // searchingForElement();
-  // acceptingListInConstructorMax();
+  inserting();
+  removingRoot();
+  removingArbitraryNode();
+  searchingForElement();
+  acceptingListInConstructorMax();
   acceptingListInConstructorMin();
 }
 
@@ -26,56 +26,56 @@ void inserting() {
   print(heap);
 }
 
-// void removingRoot() {
-//   final heap = Heap<num>();
-//   heap.insert(10);
-//   heap.insert(8);
-//   heap.insert(5);
-//   heap.insert(4);
-//   heap.insert(6);
-//   heap.insert(2);
-//   heap.insert(1);
-//   heap.insert(3);
+void removingRoot() {
+  final heap = Heap<num>();
+  heap.insert(10);
+  heap.insert(8);
+  heap.insert(5);
+  heap.insert(4);
+  heap.insert(6);
+  heap.insert(2);
+  heap.insert(1);
+  heap.insert(3);
 
-//   final root = heap.remove();
-//   print(root);
-//   print(heap);
-// }
+  final root = heap.remove();
+  print(root);
+  print(heap);
+}
 
-// void removingArbitraryNode() {
-//   final heap = Heap<num>();
-//   heap.insert(10);
-//   heap.insert(7); 
-//   heap.insert(2);
-//   heap.insert(5);
-//   heap.insert(1);
-//   print(heap);
-//   final index = 1;
-//   heap.removeAt(index);
-//   print(heap);
-// }
+void removingArbitraryNode() {
+  final heap = Heap<num>();
+  heap.insert(10);
+  heap.insert(7); 
+  heap.insert(2);
+  heap.insert(5);
+  heap.insert(1);
+  print(heap);
+  final index = 1;
+  heap.removeAt(index);
+  print(heap);
+}
 
-// void searchingForElement() {
-//   final heap = Heap<num>();
-//   heap.insert(10);
-//   heap.insert(7);
-//   heap.insert(2);
-//   heap.insert(5);
-//   heap.insert(1);
-//   print(heap);
+void searchingForElement() {
+  final heap = Heap<num>();
+  heap.insert(10);
+  heap.insert(7);
+  heap.insert(2);
+  heap.insert(5);
+  heap.insert(1);
+  print(heap);
 
-//   final index = heap.indexOf(7);
-//   print(index);
-// }
+  final index = heap.indexOf(7);
+  print(index);
+}
 
-// void acceptingListInConstructorMax() {
-//   var heap = Heap<num>(elements: [1, 12, 3, 4, 1, 6, 8, 7]);
-//   print(heap);
+void acceptingListInConstructorMax() {
+  var heap = Heap<num>(elements: [1, 12, 3, 4, 1, 6, 8, 7]);
+  print(heap);
 
-//   while (!heap.isEmpty) {
-//     print(heap.remove());
-//   }
-// }
+  while (!heap.isEmpty) {
+    print(heap.remove());
+  }
+}
 
 void acceptingListInConstructorMin() {
   var heap = Heap<num>(

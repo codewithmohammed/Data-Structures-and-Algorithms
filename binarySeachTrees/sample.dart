@@ -24,6 +24,8 @@ BinaryNode<int> createBinaryTree() {
   seven.leftChild = one;
   one.leftChild = zero;
   one.rightChild = five;
+
+  
   seven.rightChild = nine;
   nine.leftChild = eight;
 
